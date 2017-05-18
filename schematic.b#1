@@ -1790,11 +1790,11 @@ design rules under a new name.</description>
 <element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-025X050" value="0.1uF" x="59.69" y="11.43" rot="R270"/>
 <element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C025-025X050" value="0.1uF" x="62.23" y="7.62" rot="R270"/>
 <element name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" package="C4111-15" value="1N5908" x="21.59" y="16.51" rot="R180"/>
-<element name="D2" library="SparkFun-DiscreteSemi" package="DIODE-1N4001" value="1A/50V/1.1V" x="7.62" y="25.4" rot="R90">
-<attribute name="PROD_ID" value="DIO-09176" x="7.62" y="25.4" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="D2" library="SparkFun-DiscreteSemi" package="DIODE-1N4001" value="1A/50V/1.1V" x="33.02" y="24.13" rot="R90">
+<attribute name="PROD_ID" value="DIO-09176" x="33.02" y="24.13" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="D4" library="SparkFun-DiscreteSemi" package="DIODE-1N4001" value="1A/50V/1.1V" x="49.53" y="16.51" rot="R180">
-<attribute name="PROD_ID" value="DIO-09176" x="49.53" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="D4" library="SparkFun-DiscreteSemi" package="DIODE-1N4001" value="1A/50V/1.1V" x="34.29" y="12.7" rot="R180">
+<attribute name="PROD_ID" value="DIO-09176" x="34.29" y="12.7" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" package="C4111-15" value="1N5908" x="44.45" y="27.94" rot="R90"/>
 <element name="L1" library="inductors" library_urn="urn:adsk.eagle:library:243" package="82114R" value="82114R" x="67.31" y="15.24"/>
@@ -1822,7 +1822,7 @@ design rules under a new name.</description>
 <element name="R9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="0207/10" value="470" x="88.9" y="58.42"/>
 <element name="THM" library="SparkFun-Connectors" package="1X02" value="" x="38.1" y="57.15"/>
 <element name="U$1" library="ic-ds2715-nimh-charger" package="DS2715-SO16" value="DS2715" x="54.61" y="43.18"/>
-<element name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" value="" x="48.26" y="7.62" rot="R270"/>
+<element name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" package="TO220BV" value="" x="46.99" y="6.35" rot="R270"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1900,8 +1900,8 @@ design rules under a new name.</description>
 <contactref element="D4" pad="A"/>
 <wire x1="71.12" y1="35.25" x2="67.31" y2="13.335" width="0" layer="19" extent="1-1"/>
 <wire x1="82.55" y1="7.62" x2="71.12" y2="35.25" width="0" layer="19" extent="1-1"/>
-<wire x1="54.61" y1="16.51" x2="82.55" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="74.93" y1="44.45" x2="54.61" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="12.7" x2="82.55" y2="7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="74.93" y1="44.45" x2="39.37" y2="12.7" width="0" layer="19" extent="1-1"/>
 <wire x1="50.8" y1="24.13" x2="82.55" y2="7.62" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
@@ -1909,7 +1909,7 @@ design rules under a new name.</description>
 <contactref element="D5" pad="C"/>
 <contactref element="Q1" pad="D"/>
 <wire x1="44.45" y1="20.32" x2="67.31" y2="17.145" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="7.62" x2="44.45" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="6.35" x2="44.45" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U$1" pad="2"/>
@@ -1927,7 +1927,7 @@ design rules under a new name.</description>
 <wire x1="96.52" y1="48.26" x2="92.71" y2="30.48" width="0" layer="19" extent="1-1"/>
 <wire x1="93.98" y1="58.42" x2="96.52" y2="48.26" width="0" layer="19" extent="1-1"/>
 <wire x1="7.62" y1="26.67" x2="93.98" y2="58.42" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="10.16" x2="7.62" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="8.89" x2="7.62" y2="26.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="Q3" pad="G"/>
@@ -1949,7 +1949,7 @@ design rules under a new name.</description>
 <signal name="N$17">
 <contactref element="D2" pad="C"/>
 <contactref element="R2" pad="2"/>
-<wire x1="7.62" y1="30.48" x2="60.96" y2="24.13" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="29.21" x2="60.96" y2="24.13" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R1" pad="1"/>
@@ -1994,15 +1994,15 @@ design rules under a new name.</description>
 <contactref element="D4" pad="C"/>
 <contactref element="Q1" pad="S"/>
 <wire x1="73.66" y1="25.15" x2="90.17" y2="30.48" width="0" layer="19" extent="1-1"/>
-<wire x1="44.45" y1="16.51" x2="73.66" y2="25.15" width="0" layer="19" extent="1-1"/>
-<wire x1="29.21" y1="8.89" x2="44.45" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="12.7" x2="73.66" y2="25.15" width="0" layer="19" extent="1-1"/>
+<wire x1="29.21" y1="8.89" x2="29.21" y2="12.7" width="0" layer="19" extent="1-1"/>
 <wire x1="22.86" y1="8.89" x2="29.21" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="11.43" y1="8.89" x2="22.86" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="29.21" y1="16.51" x2="11.43" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="20.32" x2="22.86" y2="8.89" width="0" layer="19" extent="1-1"/>
-<wire x1="3.81" y1="45.72" x2="7.62" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="7.62" y1="36.83" x2="7.62" y2="20.32" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="5.08" x2="29.21" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="33.02" y1="19.05" x2="22.86" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="3.81" y1="45.72" x2="33.02" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="7.62" y1="36.83" x2="33.02" y2="19.05" width="0" layer="19" extent="1-1"/>
+<wire x1="44.45" y1="3.81" x2="29.21" y2="16.51" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
