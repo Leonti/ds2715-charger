@@ -226,123 +226,6 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="transistor-fet" urn="urn:adsk.eagle:library:396">
-<description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;&lt;p&gt;
-&lt;p&gt;
-Symbols changed according to IEC617&lt;p&gt; 
-All types, packages and assignment to symbols and pins checked&lt;p&gt;
-Package outlines partly checked&lt;p&gt;
-&lt;p&gt;
-JFET = junction FET&lt;p&gt;
-IGBT-x = insulated gate bipolar transistor&lt;p&gt;
-x=N: NPN; x=P: PNP&lt;p&gt;
-IGFET-mc-nnn; (IGFET=insulated gate field effect transistor)&lt;P&gt;
-m=D: depletion mode (Verdr&amp;auml;ngungstyp)&lt;p&gt;
-m=E: enhancement mode (Anreicherungstyp)&lt;p&gt;
-c: N=N-channel; P=P-Channel&lt;p&gt;
-GDSB: gate, drain, source, bulk&lt;p&gt;
-&lt;p&gt;
-by R. Vogg  15.March.2002</description>
-<packages>
-<package name="TO263" library_version="1">
-<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
-TS-005</description>
-<wire x1="4.917" y1="7.165" x2="4.917" y2="-1.839" width="0.2032" layer="21"/>
-<wire x1="4.917" y1="-1.839" x2="-4.917" y2="-1.839" width="0.2032" layer="21"/>
-<wire x1="-4.917" y1="-1.839" x2="-4.917" y2="7.165" width="0.2032" layer="21"/>
-<wire x1="-4.917" y1="7.165" x2="4.917" y2="7.165" width="0.2032" layer="51"/>
-<wire x1="-5.973" y1="8.983" x2="5.973" y2="8.983" width="0.0508" layer="39"/>
-<wire x1="5.973" y1="-8.983" x2="-5.973" y2="-8.983" width="0.0508" layer="39"/>
-<wire x1="-5.973" y1="-8.983" x2="-5.973" y2="8.983" width="0.0508" layer="39"/>
-<wire x1="5.973" y1="8.983" x2="5.973" y2="-8.983" width="0.0508" layer="39"/>
-<wire x1="-2.565" y1="7.267" x2="-2.565" y2="7.678" width="0.2032" layer="51"/>
-<wire x1="-2.565" y1="7.678" x2="-2.108" y2="8.135" width="0.2032" layer="51"/>
-<wire x1="-2.108" y1="8.135" x2="2.108" y2="8.135" width="0.2032" layer="51"/>
-<wire x1="2.108" y1="8.135" x2="2.565" y2="7.678" width="0.2032" layer="51"/>
-<wire x1="2.565" y1="7.678" x2="2.565" y2="7.267" width="0.2032" layer="51"/>
-<wire x1="2.565" y1="7.267" x2="-2.565" y2="7.267" width="0.2032" layer="51"/>
-<smd name="1" x="-2.54" y="-6.6" dx="1" dy="3.4" layer="1"/>
-<smd name="2" x="2.54" y="-6.6" dx="1" dy="3.4" layer="1"/>
-<smd name="3" x="0" y="3.5" dx="6.8" dy="9.6" layer="1"/>
-<text x="-3.81" y="-7.62" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="5.08" y="-7.62" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.4318" y1="-2.6426" x2="0.4318" y2="-1.8806" layer="21"/>
-<rectangle x1="-2.9901" y1="-4.7399" x2="-2.0899" y2="-1.9401" layer="21"/>
-<rectangle x1="2.0899" y1="-4.7399" x2="2.9901" y2="-1.9401" layer="21"/>
-<rectangle x1="-3" y1="-7.5001" x2="-2.1001" y2="-4.7" layer="51"/>
-<rectangle x1="2.1001" y1="-7.5001" x2="3" y2="-4.7" layer="51"/>
-<polygon width="0.2032" layer="51">
-<vertex x="-2.5654" y="7.2669"/>
-<vertex x="-2.5654" y="7.6782"/>
-<vertex x="-2.1082" y="8.1354"/>
-<vertex x="2.1082" y="8.1354"/>
-<vertex x="2.5654" y="7.6782"/>
-<vertex x="2.5654" y="7.2669"/>
-</polygon>
-</package>
-</packages>
-<symbols>
-<symbol name="P-MOSFET" library_version="1">
-<wire x1="0.762" y1="-0.762" x2="0.762" y2="0" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="0.762" y2="0.762" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-3.175" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="0.762" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="1.905" x2="0.762" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0.762" y1="2.54" x2="0.762" y2="3.175" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="0.762" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="-2.54" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="3.81" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.762" y1="-2.54" x2="3.81" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="3.048" y1="0.762" x2="3.302" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.302" y1="0.508" x2="3.81" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="3.81" y1="0.508" x2="4.318" y2="0.508" width="0.1524" layer="94"/>
-<wire x1="4.318" y1="0.508" x2="4.572" y2="0.254" width="0.1524" layer="94"/>
-<circle x="2.54" y="2.54" radius="0.3592" width="0" layer="94"/>
-<circle x="2.54" y="-2.54" radius="0.3592" width="0" layer="94"/>
-<text x="-11.43" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-11.43" y="-1.27" size="1.778" layer="95">&gt;NAME</text>
-<pin name="S" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="G" x="-2.54" y="2.54" visible="off" length="short" direction="pas"/>
-<pin name="D" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<polygon width="0.1524" layer="94">
-<vertex x="3.81" y="0.508"/>
-<vertex x="4.318" y="-0.254"/>
-<vertex x="3.302" y="-0.254"/>
-</polygon>
-<polygon width="0.1524" layer="94">
-<vertex x="2.54" y="0"/>
-<vertex x="1.524" y="0.762"/>
-<vertex x="1.524" y="-0.762"/>
-</polygon>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="SPB80P06P" prefix="Q" library_version="1">
-<description>&lt;b&gt;SIPMOS (R) Power-Transistor&lt;/b&gt; P-Channel, Enhancement mode&lt;p&gt;
-Source: http://www.infineon.com/upload/Document/cmc_upload/documents/011/3685/SPP80P06P.pdf</description>
-<gates>
-<gate name="G$1" symbol="P-MOSFET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO263">
-<connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="transistor-power" urn="urn:adsk.eagle:library:400">
 <description>&lt;b&gt;Power Transistors&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -15473,7 +15356,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </classes>
 <parts>
 <part name="U$1" library="ic-ds2715-nimh-charger" deviceset="DS2715" device=""/>
-<part name="Q5" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="SPB80P06P" device=""/>
 <part name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="IRF540" device=""/>
 <part name="LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
 <part name="POWER" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
@@ -15508,6 +15390,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="PMOSFET_P" device="TO220BV"/>
 <part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" technology="7-B"/>
 <part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" technology="7-B"/>
+<part name="Q5" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="PMOSFET_P" device="TO220BV"/>
 </parts>
 <sheets>
 <sheet>
@@ -15515,7 +15398,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="35.56" y="68.58"/>
-<instance part="Q5" gate="G$1" x="2.54" y="127" rot="R90"/>
 <instance part="Q3" gate="G$1" x="20.32" y="109.22"/>
 <instance part="LOAD" gate="G$1" x="-15.24" y="139.7" rot="R270"/>
 <instance part="POWER" gate="G$1" x="-66.04" y="106.68"/>
@@ -15524,10 +15406,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="C1" gate="G$1" x="-40.64" y="76.2"/>
 <instance part="LED1" gate="G$1" x="-12.7" y="88.9"/>
 <instance part="L1" gate="1" x="73.66" y="114.3"/>
-<instance part="R11" gate="G$1" x="-5.08" y="124.46"/>
+<instance part="R11" gate="G$1" x="-5.08" y="121.92"/>
 <instance part="GND1" gate="1" x="-58.42" y="101.6"/>
 <instance part="R2" gate="G$1" x="78.74" y="134.62" rot="R180"/>
-<instance part="R1" gate="G$1" x="-20.32" y="119.38" rot="R90"/>
+<instance part="R1" gate="G$1" x="-20.32" y="116.84" rot="R90"/>
 <instance part="R6" gate="G$1" x="40.64" y="109.22" rot="R90"/>
 <instance part="R9" gate="G$1" x="40.64" y="96.52" rot="R90"/>
 <instance part="R3" gate="G$1" x="15.24" y="101.6"/>
@@ -15550,6 +15432,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="Q1" gate="G$1" x="53.34" y="111.76" rot="R90"/>
 <instance part="D1" gate="G$1" x="-35.56" y="109.22"/>
 <instance part="D5" gate="G$1" x="63.5" y="106.68" rot="R90"/>
+<instance part="Q5" gate="G$1" x="2.54" y="127" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15589,12 +15472,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
 <pinref part="D5" gate="G$1" pin="A"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="Q5" gate="G$1" pin="G"/>
-<pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$4" class="0">
@@ -15677,7 +15554,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="99.06" y1="114.3" x2="99.06" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="142.24" x2="10.16" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="10.16" y1="142.24" x2="10.16" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="Q5" gate="G$1" pin="D"/>
 <wire x1="10.16" y1="129.54" x2="7.62" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="88.9" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
@@ -15695,6 +15571,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="91.44" y1="124.46" x2="91.44" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="124.46" x2="91.44" y2="124.46" width="0.1524" layer="91"/>
 <junction x="91.44" y="124.46"/>
+<pinref part="Q5" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -15776,7 +15653,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="C3" gate="G$1" pin="1"/>
-<wire x1="-20.32" y1="114.3" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-20.32" y1="111.76" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="VDD"/>
 <wire x1="-20.32" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-20.32" y="78.74"/>
@@ -15805,19 +15682,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="-10.16" y1="124.46" x2="-20.32" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="-20.32" y1="124.46" x2="-45.72" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="124.46" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-20.32" y="124.46"/>
+<wire x1="-20.32" y1="121.92" x2="-45.72" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="-45.72" y1="121.92" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="109.22" x2="-45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-45.72" y="109.22"/>
 <pinref part="POWER" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="109.22" x2="-58.42" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="D1" gate="G$1" pin="A"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="-20.32" y1="121.92" x2="-10.16" y2="121.92" width="0.1524" layer="91"/>
+<junction x="-20.32" y="121.92"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -15836,7 +15713,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-5.08" y1="114.3" x2="-5.08" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="LOAD" gate="G$1" pin="2"/>
 <wire x1="-12.7" y1="132.08" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="Q5" gate="G$1" pin="S"/>
 <wire x1="-12.7" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
 <wire x1="-12.7" y1="91.44" x2="-12.7" y2="109.22" width="0.1524" layer="91"/>
@@ -15860,6 +15736,13 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-25.4" y="109.22"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="D1" gate="G$1" pin="C"/>
+<pinref part="Q5" gate="G$1" pin="S"/>
+</segment>
+</net>
+<net name="N$1" class="0">
+<segment>
+<pinref part="Q5" gate="G$1" pin="G"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 </segment>
 </net>
 </nets>
