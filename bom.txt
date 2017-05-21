@@ -1,0 +1,28 @@
+Partlist exported from /home/leonti/eagle/DS2715/schematic.sch at 21/05/2017 11:47
+
+Qty Value       Device           Package      Parts             Description                                                                                                     PROD_ID   SF_ID     VALUE      
+1               CONN_02          1X02         THM               Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                                
+3               CONN_02POLAR     MOLEX-1X2    BATT, LOAD, POWER Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections           PRT-09918            
+1               LED5MM           LED5MM       LED1              LED                                                                                                                                            
+2               PMOSFET_PTO220BV TO220BV      Q1, Q5            Power MOSFET P-Channel                                                                                                                         
+1   0.1         R-EU_0207/10     0207/10      R7                RESISTOR, European symbol                                                                                                                      
+2   0.1uF       C-EU025-025X050  C025-025X050 C3, C4            CAPACITOR, European symbol                                                                                                                     
+1   100         R-EU_0207/10     0207/10      R11               RESISTOR, European symbol                                                                                                                      
+2   100k        R-EU_0207/10     0207/10      R8, R13           RESISTOR, European symbol                                                                                                                      
+1   10k         R-EU_0207/10     0207/10      R10               RESISTOR, European symbol                                                                                                                      
+1   150         R-EU_0207/10     0207/10      R1                RESISTOR, European symbol                                                                                                                      
+1   160k        R-EU_0207/10     0207/10      R5                RESISTOR, European symbol                                                                                                                      
+2   1A/50V/1.1V DIODE-PTH        DIODE-1N4001 D2, D4            Diode                                                                                                           DIO-09176           1A/50V/1.1V
+2   1N5817-B    1N5817-B         DO41-7.6     D1, D5            1.0A SCHOTTKY BARRIER RECTIFIER                                                                                                                
+1   1k          R-EU_0207/10     0207/10      R4                RESISTOR, European symbol                                                                                                                      
+1   1nF         C-EU025-025X050  C025-025X050 C5                CAPACITOR, European symbol                                                                                                                     
+1   1uF         C-EU025-025X050  C025-025X050 C2                CAPACITOR, European symbol                                                                                                                     
+1   220         R-EU_0207/10     0207/10      R2                RESISTOR, European symbol                                                                                                                      
+1   330         R-EU_0207/10     0207/10      R6                RESISTOR, European symbol                                                                                                                      
+1   470         R-EU_0207/10     0207/10      R9                RESISTOR, European symbol                                                                                                                      
+1   47uF        CPOL-EUE2.5-6    E2,5-6       C1                POLARIZED CAPACITOR, European symbol                                                                                                           
+1   500k        R-EU_0207/10     0207/10      R12               RESISTOR, European symbol                                                                                                                      
+1   820         R-EU_0207/10     0207/10      R3                RESISTOR, European symbol                                                                                                                      
+1   82114R      82114R           82114R       L1                INDUCTOR                                                                                                                                       
+1   DS2715      DS2715           DS2715-SO16  U$1                                                                                                                                                              
+1   IRF540      IRF540           TO220BV      Q3                HEXFET Power MOSFET                                                                                                                            
