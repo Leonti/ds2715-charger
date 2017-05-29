@@ -544,31 +544,29 @@ Based on the following sources:
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="C4111-15" library_version="1">
-<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
-diameter 5.3 mm, horizontal, grid 15.24 mm</description>
-<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="1.27" y2="0.5842" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="0.5842" x2="1.27" y2="-0.5842" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="-0.5842" x2="0" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="-0.5842" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="-2.667" x2="-5.08" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="2.667" x2="5.08" y2="-2.667" width="0.1524" layer="21"/>
-<wire x1="-5.08" y1="2.667" x2="5.08" y2="2.667" width="0.1524" layer="21"/>
-<wire x1="5.08" y1="-2.667" x2="-5.08" y2="-2.667" width="0.1524" layer="21"/>
-<wire x1="0" y1="-0.5842" x2="0.381" y2="-0.5842" width="0.1524" layer="21"/>
-<wire x1="7.62" y1="0" x2="6.223" y2="0" width="1.27" layer="51"/>
-<wire x1="-7.62" y1="0" x2="-6.223" y2="0" width="1.27" layer="51"/>
-<wire x1="-0.381" y1="0.5842" x2="0" y2="0.5842" width="0.1524" layer="21"/>
-<wire x1="0" y1="0.5842" x2="0" y2="0" width="0.1524" layer="21"/>
-<pad name="C" x="-7.62" y="0" drill="1.4986" shape="long"/>
-<pad name="A" x="7.62" y="0" drill="1.4986" shape="long"/>
-<text x="-2.54" y="-2.159" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-5.08" y="2.921" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-5.969" y1="-0.635" x2="-5.08" y2="0.635" layer="21"/>
-<rectangle x1="5.08" y1="-0.635" x2="5.969" y2="0.635" layer="21"/>
-<rectangle x1="-4.318" y1="-2.667" x2="-3.302" y2="2.667" layer="21"/>
+<package name="DO41-7.6" library_version="1">
+<description>&lt;b&gt;DO41&lt;/b&gt; 7.6mm x 2mm&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
+<wire x1="2.082" y1="-0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="2.082" y1="-0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="2.082" y2="0.92" width="0.1524" layer="21"/>
+<wire x1="-2.082" y1="0.92" x2="-2.082" y2="-0.92" width="0.1524" layer="21"/>
+<wire x1="3.81" y1="0" x2="2.494" y2="0" width="0.85" layer="51"/>
+<wire x1="-3.81" y1="0" x2="-2.519" y2="0" width="0.85" layer="51"/>
+<wire x1="-0.635" y1="0" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="0.635" x2="1.016" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="1.016" y1="-0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.524" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="1.016" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="0" width="0.1524" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="C" x="-3.81" y="0" drill="1.1" diameter="1.7"/>
+<pad name="A" x="3.81" y="0" drill="1.1" diameter="1.7"/>
+<text x="-2.032" y="1.651" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.032" y="-2.921" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-0.95" x2="-1.143" y2="0.92" layer="21"/>
+<rectangle x1="2.082" y1="-0.425" x2="2.717" y2="0.425" layer="21"/>
+<rectangle x1="-2.717" y1="-0.425" x2="-2.082" y2="0.425" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -589,20 +587,25 @@ diameter 5.3 mm, horizontal, grid 15.24 mm</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="1N5908" prefix="D" library_version="1">
-<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
-schottky</description>
+<deviceset name="1N581*" prefix="D" library_version="1">
+<description>&lt;b&gt;1.0A SCHOTTKY BARRIER RECTIFIER&lt;/b&gt;&lt;p&gt;
+Source: http://www.diodes.com/datasheets/ds23001.pdf</description>
 <gates>
-<gate name="1" symbol="SCHOTTKY" x="0" y="0"/>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="C4111-15">
+<device name="" package="DO41-7.6">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="7-B"/>
+<technology name="7-T"/>
+<technology name="8-B"/>
+<technology name="8-T"/>
+<technology name="9-B"/>
+<technology name="9-T"/>
 </technologies>
 </device>
 </devices>
@@ -15472,8 +15475,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$1" library="ic-ds2715-nimh-charger" deviceset="DS2715" device=""/>
 <part name="Q5" library="transistor-fet" library_urn="urn:adsk.eagle:library:396" deviceset="SPB80P06P" device=""/>
 <part name="Q3" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="IRF540" device=""/>
-<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5908" device=""/>
-<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N5908" device=""/>
 <part name="LOAD" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
 <part name="POWER" library="SparkFun-Connectors" deviceset="CONN_02" device="POLAR"/>
 <part name="D2" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="-PTH" value="1A/50V/1.1V"/>
@@ -15502,9 +15503,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C100" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050"/>
+<part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="025-025X050"/>
 <part name="R5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" value="47k"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="PMOSFET_P" device="TO220BV"/>
+<part name="D1" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" technology="7-B"/>
+<part name="D5" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N581*" device="" technology="7-B"/>
 </parts>
 <sheets>
 <sheet>
@@ -15514,8 +15517,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="U$1" gate="G$1" x="35.56" y="68.58"/>
 <instance part="Q5" gate="G$1" x="2.54" y="127" rot="R90"/>
 <instance part="Q3" gate="G$1" x="20.32" y="109.22"/>
-<instance part="D5" gate="1" x="63.5" y="106.68" rot="R90"/>
-<instance part="D1" gate="1" x="-35.56" y="109.22"/>
 <instance part="LOAD" gate="G$1" x="-15.24" y="139.7" rot="R270"/>
 <instance part="POWER" gate="G$1" x="-66.04" y="106.68"/>
 <instance part="D2" gate="G$1" x="55.88" y="134.62"/>
@@ -15544,9 +15545,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="GND2" gate="1" x="-15.24" y="129.54"/>
 <instance part="GND3" gate="1" x="-48.26" y="38.1"/>
 <instance part="GND4" gate="1" x="63.5" y="101.6"/>
-<instance part="C100" gate="G$1" x="5.08" y="96.52"/>
+<instance part="C5" gate="G$1" x="5.08" y="96.52"/>
 <instance part="R5" gate="G$1" x="10.16" y="76.2"/>
 <instance part="Q1" gate="G$1" x="53.34" y="111.76" rot="R90"/>
+<instance part="D1" gate="G$1" x="-35.56" y="109.22"/>
+<instance part="D5" gate="G$1" x="63.5" y="106.68" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -15560,10 +15563,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="LOAD" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="D5" gate="1" pin="A"/>
-<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
@@ -15586,6 +15585,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-40.64" y="40.64"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <junction x="-45.72" y="40.64"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="D5" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -15698,11 +15701,11 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <segment>
 <pinref part="L1" gate="1" pin="1"/>
 <wire x1="58.42" y1="114.3" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="D5" gate="1" pin="C"/>
 <wire x1="63.5" y1="114.3" x2="66.04" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="109.22" x2="63.5" y2="114.3" width="0.1524" layer="91"/>
 <junction x="63.5" y="114.3"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
+<pinref part="D5" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -15712,7 +15715,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="35.56" y1="88.9" x2="40.64" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="40.64" y1="88.9" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="C100" gate="G$1" pin="2"/>
+<pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="88.9" x2="5.08" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="88.9" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
 <junction x="35.56" y="88.9"/>
@@ -15741,7 +15744,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="Q3" gate="G$1" pin="G"/>
 <wire x1="5.08" y1="101.6" x2="5.08" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C100" gate="G$1" pin="1"/>
+<pinref part="C5" gate="G$1" pin="1"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="10.16" y1="101.6" x2="5.08" y2="101.6" width="0.1524" layer="91"/>
 <junction x="5.08" y="101.6"/>
@@ -15809,12 +15812,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-20.32" y1="124.46" x2="-45.72" y2="124.46" width="0.1524" layer="91"/>
 <wire x1="-45.72" y1="124.46" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-20.32" y="124.46"/>
-<pinref part="D1" gate="1" pin="A"/>
 <wire x1="-45.72" y1="109.22" x2="-45.72" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="-38.1" y1="109.22" x2="-45.72" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-45.72" y="109.22"/>
 <pinref part="POWER" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="109.22" x2="-58.42" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$26" class="0">
@@ -15841,7 +15844,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="-12.7" y1="109.22" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="109.22" x2="-12.7" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-12.7" y="109.22"/>
-<pinref part="D1" gate="1" pin="C"/>
 <wire x1="-12.7" y1="109.22" x2="-25.4" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-25.4" y1="109.22" x2="-33.02" y2="109.22" width="0.1524" layer="91"/>
@@ -15857,6 +15859,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <junction x="-30.48" y="78.74"/>
 <junction x="-25.4" y="109.22"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
