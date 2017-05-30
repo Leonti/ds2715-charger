@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.1">
+<eagle version="8.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -15494,8 +15494,6 @@ www.irf.com&lt;p&gt;
 <part name="Q5" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="PMOSFET_P" device="TO220BV"/>
 <part name="Q1" library="transistor-power" library_urn="urn:adsk.eagle:library:400" deviceset="FDN360P" device=""/>
 <part name="Q3" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BSS123" device=""/>
-<part name="R14" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="0207/10" value="1k"/>
-<part name="LED2" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="5MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -15508,7 +15506,7 @@ www.irf.com&lt;p&gt;
 <instance part="D2" gate="G$1" x="55.88" y="134.62"/>
 <instance part="D4" gate="G$1" x="71.12" y="124.46" rot="R180"/>
 <instance part="C1" gate="G$1" x="-40.64" y="76.2"/>
-<instance part="LED1" gate="G$1" x="-12.7" y="93.98"/>
+<instance part="LED1" gate="G$1" x="-12.7" y="88.9"/>
 <instance part="L1" gate="1" x="73.66" y="114.3"/>
 <instance part="R11" gate="G$1" x="-5.08" y="121.92"/>
 <instance part="GND1" gate="1" x="-58.42" y="101.6"/>
@@ -15538,8 +15536,6 @@ www.irf.com&lt;p&gt;
 <instance part="Q5" gate="G$1" x="2.54" y="127" rot="R90"/>
 <instance part="Q1" gate="G$1" x="53.34" y="111.76" rot="R90"/>
 <instance part="Q3" gate="G$1" x="22.86" y="109.22"/>
-<instance part="R14" gate="G$1" x="10.16" y="86.36"/>
-<instance part="LED2" gate="G$1" x="-5.08" y="93.98"/>
 </instances>
 <busses>
 </busses>
@@ -15746,7 +15742,7 @@ www.irf.com&lt;p&gt;
 <pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
 <wire x1="5.08" y1="81.28" x2="-12.7" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="-12.7" y1="81.28" x2="-12.7" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="81.28" x2="-12.7" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -15820,7 +15816,7 @@ www.irf.com&lt;p&gt;
 <wire x1="-12.7" y1="132.08" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-12.7" y1="129.54" x2="-2.54" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="G$1" pin="A"/>
-<wire x1="-12.7" y1="96.52" x2="-12.7" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="91.44" x2="-12.7" y2="109.22" width="0.1524" layer="91"/>
 <junction x="-12.7" y="129.54"/>
 <wire x1="-12.7" y1="109.22" x2="-12.7" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="109.22" x2="-12.7" y2="109.22" width="0.1524" layer="91"/>
@@ -15844,32 +15840,12 @@ www.irf.com&lt;p&gt;
 <pinref part="Q1" gate="G$1" pin="S"/>
 <pinref part="Q3" gate="G$1" pin="D"/>
 <junction x="22.86" y="114.3"/>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<wire x1="-5.08" y1="96.52" x2="-5.08" y2="109.22" width="0.1524" layer="91"/>
-<junction x="-5.08" y="109.22"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="Q5" gate="G$1" pin="G"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="C"/>
-<wire x1="-5.08" y1="88.9" x2="-5.08" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="86.36" x2="5.08" y2="86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="86.36" x2="55.88" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="86.36" x2="55.88" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="DNC"/>
-<wire x1="55.88" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
